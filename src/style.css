@@ -7,14 +7,57 @@
 @theme inline {
   --font-nunito: 'Nunito', sans-serif;
 
-  --color-bright-orange: #ff3500;
-  --color-muted-orange: #fb7645;
+  --color-primary: #ff3500;
+  --color-secondary: #fb7645;
   --color-brand-yellow: #feba1a;
   --color-dark-green: #036130;
   --color-mid-green: #309e4f;
   --color-gold: #e9a246;
+  --color-dark-text: #101010;
+  --color-light-ash: #e5e5e5;
+
+  --background-image-chevron-down: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBjbGFzcz0ic2l6ZS02Ij4NCiAgPHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJtMTkuNSA4LjI1LTcuNSA3LjUtNy41LTcuNSIgLz4NCjwvc3ZnPg0K');
+  --background-image-chevron-up: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBjbGFzcz0ic2l6ZS02Ij4NCiAgPHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJtNC41IDE1Ljc1IDcuNS03LjUgNy41IDcuNSIgLz4NCjwvc3ZnPg0K');
 }
 
 @utility container {
   @apply mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-10;
+}
+
+@layer components {
+  body {
+    @apply font-nunito text-dark-text bg-[#F3F3F3];
+  }
+
+  input,
+  select {
+    @apply border-dark-text placeholder:text-dark-text border outline-none;
+  }
+
+  select {
+    @apply cursor-pointer;
+    background-image: var(--background-image-chevron-down);
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1rem 1rem;
+
+    &:is([open], :popover-open, :open) {
+      background-image: var(--background-image-chevron-up);
+    }
+
+    /* option {
+      background-color: #1f1f2e;
+      color: white;
+    } */
+  }
+
+  .btn {
+    @apply bg-primary font-nunito inline-flex h-[52px] cursor-pointer items-center justify-center gap-1.5 rounded-lg p-4 text-base font-medium text-white duration-200 hover:bg-[hsl(from_var(--color-primary)_h_s_40)] [&_img]:size-5 [&_svg]:size-5;
+    &:is(.icon) {
+      @apply text-dark-text bg-white p-4 hover:bg-gray-200;
+    }
+    &:is(.size-wide) {
+      @apply px-14;
+    }
+  }
 }

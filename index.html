@@ -16,13 +16,96 @@
           </h5>
         </div>
       </div>
-      <div class="py-2">
+      <div class="py-5">
         <div class="container">
-          <div class="grid grid-cols-3"></div>
+          <div class="flex items-center justify-between gap-4">
+            <a href="/" class="max-w-24">
+              <img
+                src="/logo.png"
+                alt="munch global logo"
+                class="h-16 w-24 object-contain object-center"
+              />
+            </a>
+
+            <div class="flex items-center gap-6">
+              <a href="tel:123" class="inline-flex items-center gap-1">
+                <i data-lucide="phone" class="fill-primary size-5 stroke-0"></i>
+                <span class="font-nunito text-dark-text text-base font-medium">Help Center</span>
+              </a>
+
+              <div class="flex items-center">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  class="bg-light-ash h-[52px] w-full rounded-l-lg border-0 border-r border-r-[#CECECE] px-5 py-3.5"
+                />
+                <select
+                  name="category"
+                  id="category"
+                  class="bg-light-ash h-[52px] min-w-[180px] appearance-none border-0 px-5 py-3.5"
+                >
+                  <option value="">All Categories</option>
+                  <option value="1">Category 1</option>
+                  <option value="2">Category 2</option>
+                  <option value="3">Category 3</option>
+                  <option value="4">Category 4</option>
+                </select>
+                <button
+                  class="bg-primary h-[52px] cursor-pointer rounded-r-lg p-4 duration-200 hover:bg-[hsl(from_var(--color-primary)_h_s_40)]"
+                >
+                  <i data-lucide="search" class="size-[18px] text-white"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-6">
+              <button class="btn">
+                <img src="/icons/person.svg" alt="person" />
+                <span class="">Sign In / Register</span>
+              </button>
+              <div class="flex items-center gap-4">
+                <a href="#" class="cursor-pointer">
+                  <i data-lucide="heart" class="text-dark-text size-6"></i>
+                </a>
+                <a href="#" class="relative size-6 cursor-pointer">
+                  <img src="/icons/shopping-cart.svg" alt="shopping cart" />
+                  <span
+                    class="bg-primary absolute -top-2.5 -right-2.5 inline-flex size-5 items-center justify-center rounded-full p-1"
+                  >
+                    <span class="text-xs font-medium text-white">0</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="from-primary to-brand-yellow bg-gradient-to-b py-5">
+        <div class="container">
+          <div class="flex items-center justify-around gap-4">
+            <a href="/" class="text-lg leading-6 font-bold">All Products</a>
+            <a href="/" class="text-lg leading-6 font-bold">Drinks</a>
+            <a href="/" class="text-lg leading-6 font-bold">Deals</a>
+            <a href="/" class="text-lg leading-6 font-bold">Snacks</a>
+            <a href="/" class="text-lg leading-6 font-bold">Contact us</a>
+            <a href="/" class="text-lg leading-6 font-bold">About us</a>
+            <a href="/" class="text-lg leading-6 font-bold">Wholesale Registration</a>
+          </div>
         </div>
       </div>
     </header>
-    <h1 class="text-gold font-nunito text-3xl font-bold underline">Munch</h1>
+    <section
+      class="relative isolate bg-[url(/images/hero-banner.png)] bg-cover bg-center bg-no-repeat py-24 before:absolute before:inset-0 before:z-10 before:bg-gradient-to-br before:from-black before:to-white/0"
+    >
+      <div class="relative z-20 container">
+        <div class="flex flex-col gap-14 md:max-w-1/2">
+          <h1 class="text-4xl font-black text-white sm:text-5xl md:text-6xl lg:text-7xl">
+            BRING THE HEAT TO YOUR EXOTIC SNACKS
+          </h1>
+          <button class="btn size-wide w-fit uppercase">Shop Now</button>
+        </div>
+      </div>
+    </section>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
