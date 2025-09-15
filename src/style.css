@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import 'tailwindcss';
+
+/* @import './styles/theme.css'; */
+
+@theme inline {
+  --font-nunito: 'Nunito', sans-serif;
+
+  --color-bright-orange: #ff3500;
+  --color-muted-orange: #fb7645;
+  --color-brand-yellow: #feba1a;
+  --color-dark-green: #036130;
+  --color-mid-green: #309e4f;
+  --color-gold: #e9a246;
+}
+
+@utility container {
+  @apply mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-10;
+}
