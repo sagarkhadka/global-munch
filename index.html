@@ -94,18 +94,529 @@
         </div>
       </div>
     </header>
+
     <section
-      class="relative isolate bg-[url(/images/hero-banner.png)] bg-cover bg-center bg-no-repeat py-24 before:absolute before:inset-0 before:z-10 before:bg-gradient-to-br before:from-black before:to-white/0"
+      class="relative isolate flex min-h-[70vh] items-center bg-[url(/images/hero-banner.png)] bg-cover bg-center bg-no-repeat py-24 before:absolute before:inset-0 before:z-10 before:bg-gradient-to-br before:from-black before:to-white/0"
     >
       <div class="relative z-20 container">
         <div class="flex flex-col gap-14 md:max-w-1/2">
-          <h1 class="text-4xl font-black text-white sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1
+            class="text-4xl font-black text-pretty text-white sm:text-5xl md:text-6xl lg:text-7xl"
+          >
             BRING THE HEAT TO YOUR EXOTIC SNACKS
           </h1>
           <button class="btn size-wide w-fit uppercase">Shop Now</button>
         </div>
       </div>
+      <div class="absolute right-0 bottom-0 z-10 h-10/12">
+        <img src="/images/products-tree.png" class="w-atuo h-full" alt="" />
+      </div>
     </section>
+
+    <section class="section-space">
+      <div class="container">
+        <div class="mb-[60px] flex items-center justify-between gap-3">
+          <h1 class="section-heading">Shop By Categories</h1>
+          <div class="line flex items-center gap-2">
+            <button class="category-prev btn gradient">
+              <i data-lucide="chevron-left" class="size-6"></i>
+            </button>
+            <button class="category-next btn gradient">
+              <i data-lucide="chevron-right" class="size-6"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          data-presentation="carousel"
+          data-slides-per-view="3"
+          data-space-between="40"
+          data-breakpoints='{"768": {"slidesPerView": 2}, "1024": {"slidesPerView": 3}}'
+          data-next-btn-target=".category-next"
+          data-prev-btn-target=".category-prev"
+          data-loop="false"
+          class="overflow-hidden"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide category-card">
+              <img
+                src="/images/item-1.png"
+                alt="item 1"
+                class="category-img h-[400px] w-full rounded-lg object-cover"
+              />
+              <div class="mt-6 space-y-1 text-center">
+                <h3 class="text-lg font-black">Chocolates</h3>
+                <a href="#" class="group inline-flex items-center gap-1 text-sm"
+                  >+100 Products
+                  <i
+                    data-lucide="chevron-right"
+                    class="size-4 duration-200 group-hover:translate-x-1"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div class="swiper-slide category-card">
+              <img
+                src="/images/item-2.png"
+                alt="item 1"
+                class="category-img h-[400px] w-full rounded-lg object-cover"
+              />
+              <div class="mt-6 space-y-1 text-center">
+                <h3 class="text-lg font-black">Chips</h3>
+                <a href="#" class="group inline-flex items-center gap-1 text-sm"
+                  >+100 Products
+                  <i
+                    data-lucide="chevron-right"
+                    class="size-4 duration-200 group-hover:translate-x-1"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div class="swiper-slide category-card">
+              <img
+                src="/images/item-3.png"
+                alt="item 1"
+                class="category-img h-[400px] w-full rounded-lg object-cover"
+              />
+              <div class="mt-6 space-y-1 text-center">
+                <h3 class="text-lg font-black">Drinks</h3>
+                <a href="#" class="group inline-flex items-center gap-1 text-sm"
+                  >+100 Products
+                  <i
+                    data-lucide="chevron-right"
+                    class="size-4 duration-200 group-hover:translate-x-1"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div class="swiper-slide category-card">
+              <img
+                src="/images/item-1.png"
+                alt="item 1"
+                class="category-img h-[400px] w-full rounded-lg object-cover"
+              />
+              <div class="mt-6 space-y-1 text-center">
+                <h3 class="text-lg font-black">Chocolates</h3>
+                <a href="#" class="group inline-flex items-center gap-1 text-sm"
+                  >+100 Products
+                  <i
+                    data-lucide="chevron-right"
+                    class="size-4 duration-200 group-hover:translate-x-1"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div class="swiper-slide category-card">
+              <img
+                src="/images/item-2.png"
+                alt="item 1"
+                class="category-img h-[400px] w-full rounded-lg object-cover"
+              />
+              <div class="mt-6 space-y-1 text-center">
+                <h3 class="text-lg font-black">Chips</h3>
+                <a href="#" class="group inline-flex items-center gap-1 text-sm"
+                  >+100 Products
+                  <i
+                    data-lucide="chevron-right"
+                    class="size-4 duration-200 group-hover:translate-x-1"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div class="swiper-slide category-card">
+              <img
+                src="/images/item-3.png"
+                alt="item 1"
+                class="category-img h-[400px] w-full rounded-lg object-cover"
+              />
+              <div class="mt-6 space-y-1 text-center">
+                <h3 class="text-lg font-black">Drinks</h3>
+                <a href="#" class="group inline-flex items-center gap-1 text-sm"
+                  >+100 Products
+                  <i
+                    data-lucide="chevron-right"
+                    class="size-4 duration-200 group-hover:translate-x-1"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space deal-section rounded-xl">
+      <div class="container">
+        <div class="mb-[60px] flex items-center justify-between gap-3">
+          <h1 class="section-heading text-white">Deals of The Day</h1>
+          <div class="line flex items-center gap-2 before:to-white">
+            <button class="deal-prev btn gradient text-primary from-white to-white">
+              <i data-lucide="chevron-left" class="size-6"></i>
+            </button>
+            <button class="deal-next btn gradient text-primary from-white to-white">
+              <i data-lucide="chevron-right" class="size-6"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          data-presentation="carousel"
+          data-slides-per-view="4"
+          data-space-between="40"
+          data-breakpoints='{"768": {"slidesPerView": 2}, "1024": {"slidesPerView": 4}}'
+          data-next-btn-target=".deal-next"
+          data-prev-btn-target=".deal-prev"
+          data-loop="false"
+          class="overflow-hidden"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide product-card">
+              <div class="top-action">
+                <span class="sale">SALE!</span>
+                <button class="like-btn">
+                  <i data-lucide="heart" class="text-secondary size-6"></i>
+                </button>
+              </div>
+              <img src="/images/kit-kat.png" alt="item 1" class="product-img" />
+              <div class="product-details">
+                <div class="flex flex-col gap-1 text-center">
+                  <span class="text-dark-text/55 capitalize">Chocolates, Trending</span>
+                  <h3 class="product-name">Kitkat Duo - India</h3>
+                  <div class="flex items-center justify-center gap-2">
+                    <span class="text-dark-text/55 text-base font-medium line-through">$25.00</span>
+                    <span class="text-primary text-lg font-medium">$7.03</span>
+                  </div>
+                </div>
+                <div class="mt-4 flex items-center gap-2">
+                  <button
+                    class="btn icon"
+                    onclick="document.getElementById('product-detail').showModal()"
+                  >
+                    <i data-lucide="eye" class="text-primary size-6"></i>
+                  </button>
+                  <button class="btn uppercase">SHOP NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide product-card">
+              <div class="top-action">
+                <span class="sale">SALE!</span>
+                <button class="like-btn">
+                  <i data-lucide="heart" class="text-secondary size-6"></i>
+                </button>
+              </div>
+              <img src="/images/kit-kat.png" alt="item 1" class="product-img" />
+              <div class="product-details">
+                <div class="flex flex-col gap-1 text-center">
+                  <span class="text-dark-text/55 capitalize">Chocolates, Trending</span>
+                  <h3 class="product-name">Squid Game Dalgona Chocolate</h3>
+                  <div class="flex items-center justify-center gap-2">
+                    <span class="text-dark-text/55 text-base font-medium line-through">$25.00</span>
+                    <span class="text-primary text-lg font-medium">$7.03</span>
+                  </div>
+                </div>
+                <div class="mt-4 flex items-center gap-2">
+                  <button
+                    class="btn icon"
+                    onclick="document.getElementById('product-detail').showModal()"
+                  >
+                    <i data-lucide="eye" class="text-primary size-6"></i>
+                  </button>
+                  <button class="btn uppercase">SHOP NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide product-card">
+              <div class="top-action">
+                <span class="sale">SALE!</span>
+                <button class="like-btn">
+                  <i data-lucide="heart" class="text-secondary size-6"></i>
+                </button>
+              </div>
+              <img src="/images/kit-kat.png" alt="item 1" class="product-img" />
+              <div class="product-details">
+                <div class="flex flex-col gap-1 text-center">
+                  <span class="text-dark-text/55 capitalize">Chocolates, Trending</span>
+                  <h3 class="product-name">Kitkat Duo - India</h3>
+                  <div class="flex items-center justify-center gap-2">
+                    <span class="text-dark-text/55 text-base font-medium line-through">$25.00</span>
+                    <span class="text-primary text-lg font-medium">$7.03</span>
+                  </div>
+                </div>
+                <div class="mt-4 flex items-center gap-2">
+                  <button
+                    class="btn icon"
+                    onclick="document.getElementById('product-detail').showModal()"
+                  >
+                    <i data-lucide="eye" class="text-primary size-6"></i>
+                  </button>
+                  <button class="btn uppercase">SHOP NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide product-card">
+              <div class="top-action">
+                <span class="sale">SALE!</span>
+                <button class="like-btn">
+                  <i data-lucide="heart" class="text-secondary size-6"></i>
+                </button>
+              </div>
+              <img src="/images/kit-kat.png" alt="item 1" class="product-img" />
+              <div class="product-details">
+                <div class="flex flex-col gap-1 text-center">
+                  <span class="text-dark-text/55 capitalize">Chocolates, Trending</span>
+                  <h3 class="product-name">Kitkat Duo - India</h3>
+                  <div class="flex items-center justify-center gap-2">
+                    <span class="text-dark-text/55 text-base font-medium line-through">$25.00</span>
+                    <span class="text-primary text-lg font-medium">$7.03</span>
+                  </div>
+                </div>
+                <div class="mt-4 flex items-center gap-2">
+                  <button
+                    class="btn icon"
+                    onclick="document.getElementById('product-detail').showModal()"
+                  >
+                    <i data-lucide="eye" class="text-primary size-6"></i>
+                  </button>
+                  <button class="btn uppercase">SHOP NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide product-card">
+              <div class="top-action">
+                <span class="sale">SALE!</span>
+                <button class="like-btn">
+                  <i data-lucide="heart" class="text-secondary size-6"></i>
+                </button>
+              </div>
+              <img src="/images/kit-kat.png" alt="item 1" class="product-img" />
+              <div class="product-details">
+                <div class="flex flex-col gap-1 text-center">
+                  <span class="text-dark-text/55 capitalize">Chocolates, Trending</span>
+                  <h3 class="product-name">Kitkat Duo - India</h3>
+                  <div class="flex items-center justify-center gap-2">
+                    <span class="text-dark-text/55 text-base font-medium line-through">$25.00</span>
+                    <span class="text-primary text-lg font-medium">$7.03</span>
+                  </div>
+                </div>
+                <div class="mt-4 flex items-center gap-2">
+                  <button
+                    class="btn icon"
+                    onclick="document.getElementById('product-detail').showModal()"
+                  >
+                    <i data-lucide="eye" class="text-primary size-6"></i>
+                  </button>
+                  <button class="btn uppercase">SHOP NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-20 flex w-full justify-center">
+          <button class="btn light size-wide">View All</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space bg-white">
+      <div class="container">
+        <div class="mb-[60px] flex items-center justify-between gap-3">
+          <h1 class="section-heading">Trending Products</h1>
+        </div>
+
+        <div class="grid grid-cols-5 gap-5">
+          <div class="product-card">
+            <div class="top-action">
+              <span class="sale">SALE!</span>
+              <button class="like-btn">
+                <i data-lucide="heart" class="text-secondary size-6"></i>
+              </button>
+            </div>
+            <img src="/images/kit-kat.png" alt="item 1" class="product-img" />
+            <div class="product-details">
+              <div class="flex flex-col gap-1 text-center">
+                <span class="text-dark-text/55 capitalize">Chocolates, Trending</span>
+                <h3 class="product-name">Kitkat Duo - India</h3>
+                <div class="flex items-center justify-center gap-2">
+                  <span class="text-dark-text/55 text-base font-medium line-through">$25.00</span>
+                  <span class="text-primary text-lg font-medium">$7.03</span>
+                </div>
+              </div>
+              <div class="mt-4 flex items-center gap-2">
+                <button
+                  class="btn icon"
+                  onclick="document.getElementById('product-detail').showModal()"
+                >
+                  <i data-lucide="eye" class="text-primary size-6"></i>
+                </button>
+                <button class="btn uppercase">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="top-action">
+              <span class="sale">SALE!</span>
+              <button class="like-btn">
+                <i data-lucide="heart" class="text-secondary size-6"></i>
+              </button>
+            </div>
+            <img src="/images/kit-kat.png" alt="item 1" class="product-img" />
+            <div class="product-details">
+              <div class="flex flex-col gap-1 text-center">
+                <span class="text-dark-text/55 capitalize">Chocolates, Trending</span>
+                <h3 class="product-name">Squid Game Dalgona Chocolate</h3>
+                <div class="flex items-center justify-center gap-2">
+                  <span class="text-dark-text/55 text-base font-medium line-through">$25.00</span>
+                  <span class="text-primary text-lg font-medium">$7.03</span>
+                </div>
+              </div>
+              <div class="mt-4 flex items-center gap-2">
+                <button
+                  class="btn icon"
+                  onclick="document.getElementById('product-detail').showModal()"
+                >
+                  <i data-lucide="eye" class="text-primary size-6"></i>
+                </button>
+                <button class="btn uppercase">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="top-action">
+              <span class="sale">SALE!</span>
+              <button class="like-btn">
+                <i data-lucide="heart" class="text-secondary size-6"></i>
+              </button>
+            </div>
+            <img src="/images/kit-kat.png" alt="item 1" class="product-img" />
+            <div class="product-details">
+              <div class="flex flex-col gap-1 text-center">
+                <span class="text-dark-text/55 capitalize">Chocolates, Trending</span>
+                <h3 class="product-name">Kitkat Duo - India</h3>
+                <div class="flex items-center justify-center gap-2">
+                  <span class="text-dark-text/55 text-base font-medium line-through">$25.00</span>
+                  <span class="text-primary text-lg font-medium">$7.03</span>
+                </div>
+              </div>
+              <div class="mt-4 flex items-center gap-2">
+                <button
+                  class="btn icon"
+                  onclick="document.getElementById('product-detail').showModal()"
+                >
+                  <i data-lucide="eye" class="text-primary size-6"></i>
+                </button>
+                <button class="btn uppercase">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="top-action">
+              <span class="sale">SALE!</span>
+              <button class="like-btn">
+                <i data-lucide="heart" class="text-secondary size-6"></i>
+              </button>
+            </div>
+            <img src="/images/kit-kat.png" alt="item 1" class="product-img" />
+            <div class="product-details">
+              <div class="flex flex-col gap-1 text-center">
+                <span class="text-dark-text/55 capitalize">Chocolates, Trending</span>
+                <h3 class="product-name">Kitkat Duo - India</h3>
+                <div class="flex items-center justify-center gap-2">
+                  <span class="text-dark-text/55 text-base font-medium line-through">$25.00</span>
+                  <span class="text-primary text-lg font-medium">$7.03</span>
+                </div>
+              </div>
+              <div class="mt-4 flex items-center gap-2">
+                <button
+                  class="btn icon"
+                  onclick="document.getElementById('product-detail').showModal()"
+                >
+                  <i data-lucide="eye" class="text-primary size-6"></i>
+                </button>
+                <button class="btn uppercase">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="top-action">
+              <span class="sale">SALE!</span>
+              <button class="like-btn">
+                <i data-lucide="heart" class="text-secondary size-6"></i>
+              </button>
+            </div>
+            <img src="/images/kit-kat.png" alt="item 1" class="product-img" />
+            <div class="product-details">
+              <div class="flex flex-col gap-1 text-center">
+                <span class="text-dark-text/55 capitalize">Chocolates, Trending</span>
+                <h3 class="product-name">Kitkat Duo - India</h3>
+                <div class="flex items-center justify-center gap-2">
+                  <span class="text-dark-text/55 text-base font-medium line-through">$25.00</span>
+                  <span class="text-primary text-lg font-medium">$7.03</span>
+                </div>
+              </div>
+              <div class="mt-4 flex items-center gap-2">
+                <button
+                  class="btn icon"
+                  onclick="document.getElementById('product-detail').showModal()"
+                >
+                  <i data-lucide="eye" class="text-primary size-6"></i>
+                </button>
+                <button class="btn uppercase">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-20 flex w-full justify-center">
+          <button class="btn size-wide">SHOP ALL PRODUCTS</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="container grid grid-cols-3 grid-rows-2 gap-6">
+        <div class="chips-gradient row-span-2 overflow-hidden rounded-lg p-4"></div>
+        <div class="chocolates-gradient overflow-hidden rounded-lg p-4"></div>
+        <div class="soft-drink-gradient row-span-2 overflow-hidden rounded-lg p-4"></div>
+        <div class="breakfast-gradient overflow-hidden rounded-lg p-4"></div>
+      </div>
+    </section>
+
+    <dialog
+      id="product-detail"
+      class="backdrop:bg-primary/40 top-1/2 left-1/2 min-w-6xl -translate-1/2 bg-white p-6 outline-none backdrop:backdrop-blur-xs"
+    >
+      <div class="grid grid-cols-2 gap-10">
+        <div class="border-primary flex items-center justify-center rounded-lg border p-5">
+          <img src="/images/kit-kat.png" alt="item 1" class="max-h-[470px] w-full object-contain" />
+        </div>
+        <div class="flex flex-col">
+          <h2 class="mb-4 text-2xl font-extrabold md:mb-6 md:text-[30px] lg:mb-8">
+            Kitkat Duo - India
+          </h2>
+          <p class="tex-lg text-primary text-xl font-extrabold sm:text-3xl md:text-[40px]">$7.03</p>
+
+          <div class="my-8 flex flex-col gap-8">
+            <p>
+              A delightful craving has taken hold of every sense, like the joyful moments of travel
+              tasted in every bite. Global Munch brings the world to you—one irresistible snack at a
+              time.
+            </p>
+
+            <div class="flex items-center gap-5">
+              <div
+                id="quantity"
+                class="flex items-center gap-5 rounded-md bg-neutral-200 px-4 py-3"
+              >
+                <button class="decrease cursor-pointer">-</button>
+                <span class="text-primary qty">1</span>
+                <button class="increase cursor-pointer">+</button>
+              </div>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

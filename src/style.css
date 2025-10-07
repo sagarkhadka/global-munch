@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
+@import 'swiper/css';
+@import 'swiper/css/navigation';
 @import 'tailwindcss';
 
 /* @import './styles/theme.css'; */
@@ -24,9 +25,21 @@
   @apply mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-10;
 }
 
+@utility section-space {
+  @apply py-8 sm:py-12 md:py-20;
+}
+
+@utility section-heading {
+  @apply text-dark-text text-3xl font-black md:text-4xl lg:text-5xl;
+}
+
 @layer components {
   body {
     @apply font-nunito text-dark-text bg-[#F3F3F3];
+
+    &:has(dialog:open) {
+      overflow-y: hidden;
+    }
   }
 
   input,
@@ -52,12 +65,74 @@
   }
 
   .btn {
-    @apply bg-primary font-nunito inline-flex h-[52px] cursor-pointer items-center justify-center gap-1.5 rounded-lg p-4 text-base font-medium text-white duration-200 hover:bg-[hsl(from_var(--color-primary)_h_s_40)] [&_img]:size-5 [&_svg]:size-5;
+    @apply bg-primary font-nunito focus:ring-primary/30 inline-flex h-[48px] cursor-pointer items-center justify-center gap-1.5 rounded-lg px-4 py-3 text-base font-medium text-white duration-200 outline-none hover:bg-[hsl(from_var(--color-primary)_h_s_40)] focus:ring-[4px] [&_img]:size-5 [&_svg]:size-5;
     &:is(.icon) {
       @apply text-dark-text bg-white p-4 hover:bg-gray-200;
     }
     &:is(.size-wide) {
-      @apply px-14;
+      @apply px-8 md:px-12;
+    }
+    &:is(.gradient) {
+      @apply from-primary to-brand-yellow bg-gradient-to-b not-[.swiper-button-disabled]:hover:bg-gradient-to-bl;
+    }
+    &:is(.light) {
+      @apply text-primary bg-white font-semibold uppercase hover:bg-neutral-200;
     }
   }
+
+  .line {
+    @apply before:to-primary relative before:absolute before:-left-[calc(30vw+1rem)] before:h-1 before:w-[30vw] before:bg-gradient-to-r before:from-white/0 before:max-md:hidden;
+  }
+
+  .chips-gradient {
+    background: radial-gradient(70% 70% at 50% 50%, #ffec01 3%, #fd430a 62%);
+  }
+
+  .chocolates-gradient {
+    background: linear-gradient(270deg, #ae4e2f 0%, #632b12 100%);
+  }
+
+  .breakfast-gradient {
+    background: linear-gradient(90deg, #bbecff 0%, #00b2ff 49%);
+  }
+
+  .soft-drink-gradient {
+    background: radial-gradient(70.71% 70.71% at 50% 50%, #e6ff00 3%, #40b44b 62%);
+  }
+}
+
+.swiper-button-disabled {
+  @apply cursor-not-allowed opacity-70;
+}
+
+.product-card {
+  @apply border-brand-yellow flex h-auto min-h-full flex-col rounded-lg border bg-white p-4 pb-8;
+
+  .top-action {
+    @apply flex items-center justify-between;
+
+    .sale {
+      @apply bg-secondary rounded-md px-2 py-1 text-sm text-white uppercase;
+    }
+
+    .like-btn {
+      @apply hover:[&_svg]:fill-secondary cursor-pointer [&_svg]:duration-200;
+    }
+  }
+
+  .product-img {
+    @apply mt-3 h-[185px] w-full rounded-lg object-contain;
+  }
+
+  .product-details {
+    .product-name {
+      @apply line-clamp-2 text-lg font-black;
+    }
+  }
+}
+
+.deal-section {
+  background: url('/images/bg-wallpaper.png'), linear-gradient(180deg, #f8253a 0%, #f8253a 100%);
+  background-size: cover;
+  background-position: center;
 }
