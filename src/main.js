@@ -1,4 +1,4 @@
-import { ChevronLeft, ChevronRight, createIcons, Eye, Heart, Phone, Search } from 'lucide'
+import { ChevronLeft, ChevronRight, createIcons, Eye, Heart, Phone, Search, X } from 'lucide'
 import { carousel } from './carousel'
 
 createIcons({
@@ -8,7 +8,8 @@ createIcons({
     Heart,
     ChevronRight,
     ChevronLeft,
-    Eye
+    Eye,
+    X
   }
 })
 
